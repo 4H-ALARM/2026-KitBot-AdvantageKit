@@ -7,7 +7,9 @@ import java.util.Optional;
 import org.littletonrobotics.junction.AutoLog;
 
 public class PhaseshiftIO {
+  // time before next phase is active where the hub will register scoring fuel.
   public static final double graceStartPeriod = 0;
+  // time after current phase where the hub will register scoring fuel.
   public static final double graceEndPeriod = 3;
 
   @AutoLog
