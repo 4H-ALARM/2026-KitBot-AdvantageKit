@@ -167,6 +167,10 @@ public class RobotContainer {
                             new Pose2d(drive.getPose().getTranslation(), Rotation2d.kZero)),
                     drive)
                 .ignoringDisable(true));
+
+    controller.leftBumper().whileTrue(superstructure.intake());
+    controller.rightBumper().whileTrue(superstructure.launch());
+    controller.y().whileTrue(superstructure.eject());
   }
 
   /**
