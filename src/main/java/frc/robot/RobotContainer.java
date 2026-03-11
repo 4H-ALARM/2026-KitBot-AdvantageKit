@@ -33,7 +33,6 @@ import frc.robot.subsystems.vision.VisionConstants;
 import frc.robot.subsystems.vision.VisionIO;
 import frc.robot.subsystems.vision.VisionIOPhotonVision;
 import frc.robot.subsystems.vision.VisionIOPhotonVisionSim;
-
 import org.littletonrobotics.junction.networktables.LoggedDashboardChooser;
 
 /**
@@ -110,8 +109,7 @@ public class RobotContainer {
             new Vision(
                 drive::addVisionMeasurement,
                 new VisionIOPhotonVisionSim(
-                    VisionConstants.camera0Name, VisionConstants.robotToCamera0,
-                    drive::getPose));
+                    VisionConstants.camera0Name, VisionConstants.robotToCamera0, drive::getPose));
         break;
 
       default:
@@ -125,11 +123,7 @@ public class RobotContainer {
                 new ModuleIO() {});
         superstructure = new Superstructure(new SuperstructureIO() {});
 
-        vision =
-            new Vision(
-                drive::addVisionMeasurement,
-                new VisionIO() {}
-            );
+        vision = new Vision(drive::addVisionMeasurement, new VisionIO() {});
         break;
     }
 
