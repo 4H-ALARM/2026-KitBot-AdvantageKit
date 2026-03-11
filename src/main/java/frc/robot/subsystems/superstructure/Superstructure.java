@@ -16,15 +16,20 @@ import org.littletonrobotics.junction.Logger;
 public class Superstructure extends SubsystemBase {
   private final SuperstructureIO io;
   private final SuperstructureIOInputsAutoLogged inputs = new SuperstructureIOInputsAutoLogged();
+  private final PhaseshiftIO phaseshift;
+  private final PhaseshiftIOInputsAutoLogged psinputs = new PhaseshiftIOInputsAutoLogged();
 
   public Superstructure(SuperstructureIO io) {
     this.io = io;
+    this.phaseshift = new PhaseshiftIO();
   }
 
   @Override
   public void periodic() {
     io.updateInputs(inputs);
     Logger.processInputs("Superstructure", inputs);
+    phaseshift.updateInputs(psinputs);
+    Logger.processInputs("Phase Shift", psinputs);
   }
 
   /** Set the rollers to the values for intaking. */
