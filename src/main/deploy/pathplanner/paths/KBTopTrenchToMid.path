@@ -3,45 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 3.1001,
-        "y": 4.022042857142857
+        "x": 3.54922891566265,
+        "y": 7.44444578313253
       },
       "prevControl": null,
       "nextControl": {
-        "x": 3.0871480601521406,
-        "y": 5.097485776959985
+        "x": 4.549228915662655,
+        "y": 7.44444578313253
       },
       "isLocked": false,
-      "linkedName": "KBAutoStart"
+      "linkedName": "KBTopTrench"
     },
     {
       "anchor": {
-        "x": 3.1001,
-        "y": 7.352028571428572
+        "x": 6.139096385542168,
+        "y": 7.44444578313253
       },
       "prevControl": {
-        "x": 2.598968873050044,
-        "y": 7.165710588331794
+        "x": 5.484726255969034,
+        "y": 7.44444578313253
       },
       "nextControl": {
-        "x": 4.1107571428571426,
-        "y": 7.727785714285714
-      },
-      "isLocked": false,
-      "linkedName": null
-    },
-    {
-      "anchor": {
-        "x": 6.520785714285714,
-        "y": 7.352028571428572
-      },
-      "prevControl": {
-        "x": 5.646207142857143,
-        "y": 7.290482142857143
-      },
-      "nextControl": {
-        "x": 7.487395194136576,
-        "y": 7.4200514606824575
+        "x": 6.793466515115303,
+        "y": 7.44444578313253
       },
       "isLocked": false,
       "linkedName": null
@@ -52,17 +36,17 @@
         "y": 6.807828571428571
       },
       "prevControl": {
-        "x": 7.648057142857143,
-        "y": 7.507514285714285
+        "x": 7.330216867469881,
+        "y": 7.400734939759036
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "TopOfMid"
+      "linkedName": null
     }
   ],
   "rotationTargets": [
     {
-      "waypointRelativePos": 2,
+      "waypointRelativePos": 1,
       "rotationDegrees": 0.0
     }
   ],
@@ -87,5 +71,5 @@
     "velocity": 0,
     "rotation": 0.0
   },
-  "useDefaultConstraints": false
+  "useDefaultConstraints": true
 }
