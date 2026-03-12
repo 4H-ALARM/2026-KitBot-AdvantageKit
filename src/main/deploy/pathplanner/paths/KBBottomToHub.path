@@ -3,29 +3,45 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 7.662619642857143,
-        "y": 1.3399142857142852
+        "x": 7.450421686746989,
+        "y": 1.3139999999999998
       },
       "prevControl": null,
       "nextControl": {
-        "x": 7.0018625000000005,
-        "y": 1.0548571428571427
+        "x": 6.789664543889846,
+        "y": 1.0289428571428574
       },
       "isLocked": false,
       "linkedName": "BottomOfMid"
     },
     {
       "anchor": {
-        "x": 4.356942857142857,
-        "y": 0.3681285714285707
+        "x": 4.336024096385542,
+        "y": 0.5709156626506025
       },
       "prevControl": {
-        "x": 6.041371428571429,
-        "y": 0.07011428571428491
+        "x": 5.975180722891567,
+        "y": 0.5599879518072295
       },
       "nextControl": {
-        "x": 2.5226620519250273,
-        "y": 0.6926551754286487
+        "x": 2.4732977670470304,
+        "y": 0.5833338381795257
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 2.806144578313253,
+        "y": 2.0680120481927715
+      },
+      "prevControl": {
+        "x": 2.8104397794641955,
+        "y": 1.350199797980156
+      },
+      "nextControl": {
+        "x": 2.80155377441796,
+        "y": 2.835225307493087
       },
       "isLocked": false,
       "linkedName": null
@@ -44,7 +60,12 @@
       "linkedName": null
     }
   ],
-  "rotationTargets": [],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 2,
+      "rotationDegrees": 90.0
+    }
+  ],
   "constraintZones": [],
   "pointTowardsZones": [],
   "eventMarkers": [],
@@ -64,7 +85,7 @@
   "folder": null,
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 0.0
+    "rotation": 90.0
   },
   "useDefaultConstraints": true
 }
