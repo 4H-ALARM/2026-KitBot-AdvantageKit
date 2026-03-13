@@ -5,15 +5,9 @@
     "data": {
       "commands": [
         {
-          "type": "named",
-          "data": {
-            "name": "Score"
-          }
-        },
-        {
           "type": "path",
           "data": {
-            "pathName": "KBHubToMid"
+            "pathName": "KBBottomTrenchToMid"
           }
         },
         {
@@ -23,7 +17,7 @@
               {
                 "type": "path",
                 "data": {
-                  "pathName": "HalfKBTopSweep"
+                  "pathName": "HalfKBBottomSweep"
                 }
               },
               {
@@ -38,7 +32,7 @@
         {
           "type": "path",
           "data": {
-            "pathName": "KBMidToHubTopPath"
+            "pathName": "KBMidToHubBottomPath"
           }
         },
         {
