@@ -146,7 +146,7 @@ public class RobotContainer {
     // autoChooser.addOption(
     //   "Drive SysId (Quasistatic Reverse)",
     //   drive.sysIdQuasistatic(SysIdRoutine.Direction.kReverse));
-    autoChooser.addOption("Strafe Right", AutoBuilder.buildAuto("New Auto"));
+    autoChooser.addOption("ShootAndBuzzHub", AutoBuilder.buildAuto("ShootAndBuzzHub"));
     // autoChooser.addOption(
     //    "Drive SysId (Dynamic Forward)", drive.sysIdDynamic(SysIdRoutine.Direction.kForward));
     // autoChooser.addOption(
