@@ -3,67 +3,67 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 7.674821683309556,
-        "y": 1.3502282453637668
+        "x": 7.648,
+        "y": 3.9831714285714277
       },
       "prevControl": null,
       "nextControl": {
-        "x": 7.014064540452414,
-        "y": 1.0651711025066244
-      },
-      "isLocked": false,
-      "linkedName": "BottomOfMid"
-    },
-    {
-      "anchor": {
-        "x": 4.336024096385542,
-        "y": 0.5709156626506025
-      },
-      "prevControl": {
-        "x": 5.975180722891567,
-        "y": 0.5599879518072295
-      },
-      "nextControl": {
-        "x": 2.4732977670470304,
-        "y": 0.5833338381795257
+        "x": 7.532496433666189,
+        "y": 2.889928673323824
       },
       "isLocked": false,
       "linkedName": null
     },
     {
       "anchor": {
-        "x": 2.806144578313253,
-        "y": 2.0680120481927715
+        "x": 6.251569186875892,
+        "y": 0.7679885877318122
       },
       "prevControl": {
-        "x": 2.8104397794641955,
-        "y": 1.350199797980156
+        "x": 7.23009736141769,
+        "y": 0.9556515253151711
       },
       "nextControl": {
-        "x": 2.80155377441796,
-        "y": 2.835225307493087
+        "x": 5.307047075606277,
+        "y": 0.5868473609129818
       },
       "isLocked": false,
       "linkedName": null
     },
     {
       "anchor": {
-        "x": 2.9316571428571425,
-        "y": 4.112742857142857
+        "x": 2.9156171735241503,
+        "y": 0.7679885877318122
       },
       "prevControl": {
-        "x": 2.892785714285714,
-        "y": 3.322357142857143
+        "x": 3.9118939210277155,
+        "y": 0.44452211126961516
+      },
+      "nextControl": {
+        "x": 2.408216269764859,
+        "y": 0.9327291409004137
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 3.1001,
+        "y": 4.022042857142857
+      },
+      "prevControl": {
+        "x": 2.1000999999999994,
+        "y": 4.022042857142857
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "KBAutoStart"
     }
   ],
   "rotationTargets": [
     {
-      "waypointRelativePos": 2,
-      "rotationDegrees": 90.0
+      "waypointRelativePos": 2.0,
+      "rotationDegrees": -90.0
     }
   ],
   "constraintZones": [],
@@ -85,7 +85,7 @@
   "folder": null,
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 90.0
+    "rotation": -90.0
   },
   "useDefaultConstraints": true
 }
