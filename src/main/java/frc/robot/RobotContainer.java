@@ -135,14 +135,6 @@ public class RobotContainer {
     // Set up auto routines
     autoChooser = new LoggedDashboardChooser<>("Auto Choices", AutoBuilder.buildAutoChooser());
 
-    // Set up SysId routines
-    autoChooser.addOption(
-        "HalfKBTopTrench", AutoBuilder.buildAuto("HalfKBTopTrench")
-        );
-    autoChooser.addOption(
-        "HalfKBBottomTrench", AutoBuilder.buildAuto("HalfKBBottomTrench")
-        );
-
     // Configure the button bindings
     configureButtonBindings();
   }
