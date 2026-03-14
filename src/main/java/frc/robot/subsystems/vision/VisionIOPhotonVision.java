@@ -12,11 +12,11 @@ import static frc.robot.subsystems.vision.VisionConstants.*;
 import edu.wpi.first.math.geometry.Pose3d;
 import edu.wpi.first.math.geometry.Rotation2d;
 import edu.wpi.first.math.geometry.Transform3d;
-import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
+import org.littletonrobotics.junction.networktables.LoggedDashboardChooser;
 import org.photonvision.PhotonCamera;
 import org.photonvision.targeting.PhotonTrackedTarget;
 
@@ -24,7 +24,7 @@ import org.photonvision.targeting.PhotonTrackedTarget;
 public class VisionIOPhotonVision implements VisionIO {
   protected final PhotonCamera camera;
   protected final Transform3d robotToCamera;
-  SendableChooser<Integer> priorityTag = new SendableChooser<>();
+  LoggedDashboardChooser<Integer> priorityTag = null;
   /**
    * Creates a new VisionIOPhotonVision.
    *
@@ -39,7 +39,7 @@ public class VisionIOPhotonVision implements VisionIO {
   @Override
   public void updateInputs(VisionIOInputs inputs) {
     inputs.connected = camera.isConnected();
-    int priorityTagID = priorityTag.getSelected();
+    int priorityTagID = priorityTag.get();
 
     // Read new camera observations
     Set<Short> tagIds = new HashSet<>();
@@ -139,7 +139,7 @@ public class VisionIOPhotonVision implements VisionIO {
   }
 
   @Override
-  public void setPriorityTagChooser(SendableChooser<Integer> priorityTag) {
+  public void setPriorityTagChooser(LoggedDashboardChooser<Integer> priorityTag) {
     this.priorityTag = priorityTag;
   }
 }

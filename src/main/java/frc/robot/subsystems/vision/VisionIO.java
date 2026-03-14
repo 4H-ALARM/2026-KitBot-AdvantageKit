@@ -9,8 +9,8 @@ package frc.robot.subsystems.vision;
 
 import edu.wpi.first.math.geometry.Pose3d;
 import edu.wpi.first.math.geometry.Rotation2d;
-import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import org.littletonrobotics.junction.AutoLog;
+import org.littletonrobotics.junction.networktables.LoggedDashboardChooser;
 
 public interface VisionIO {
   @AutoLog
@@ -42,5 +42,5 @@ public interface VisionIO {
 
   public default void updateInputs(VisionIOInputs inputs) {}
 
-  public default void setPriorityTagChooser(SendableChooser<Integer> priorityTagID) {}
+  public default void setPriorityTagChooser(LoggedDashboardChooser<Integer> priorityTagID) {}
 }

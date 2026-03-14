@@ -18,26 +18,27 @@ import edu.wpi.first.math.numbers.N1;
 import edu.wpi.first.math.numbers.N3;
 import edu.wpi.first.wpilibj.Alert;
 import edu.wpi.first.wpilibj.Alert.AlertType;
-import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.subsystems.vision.VisionIO.PoseObservationType;
 import java.util.LinkedList;
 import java.util.List;
 import org.littletonrobotics.junction.Logger;
+import org.littletonrobotics.junction.networktables.LoggedDashboardChooser;
 
 public class Vision extends SubsystemBase {
   private final VisionConsumer consumer;
   private final VisionIO[] io;
   private final VisionIOInputsAutoLogged[] inputs;
   private final Alert[] disconnectedAlerts;
-  private final SendableChooser<Integer> priorityTag = new SendableChooser<>();
+  private final LoggedDashboardChooser<Integer> priorityTag =
+      new LoggedDashboardChooser<>("Priority Tag");
 
   public Vision(VisionConsumer consumer, VisionIO... io) {
     this.consumer = consumer;
     this.io = io;
     var tags = aprilTagLayout.getTags();
 
-    priorityTag.setDefaultOption("None", 0);
+    priorityTag.addDefaultOption("None", 0);
 
     for (int i = 1; i <= tags.get(tags.size() - 1).ID; ++i) {
       priorityTag.addOption("tag" + i, i);
