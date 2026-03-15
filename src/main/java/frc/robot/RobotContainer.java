@@ -54,7 +54,7 @@ public class RobotContainer {
   private final ShootTargetIO shootTarget =
       new ShootTargetIO(
           new Translation3d(
-              Inches.of(182.11).in(Meters),
+              Inches.of(651.22 - 182.11).in(Meters),
               Inches.of(317.69 / 2).in(Meters),
               Inches.of(72).in(Meters)),
           true);
